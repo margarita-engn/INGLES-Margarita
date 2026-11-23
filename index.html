@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Past Tense — Margarita Sanchez Nieves</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Barra Superior -->
+    <nav class="top-bar">
+      <div class="brand">
+        <div class="brand-badge">☁️✨</div>
+        <span data-i18n="brandTitle">English Project • Simple Past </span>
+      </div>
+      <div class="controls">
+        <button class="btn-pill btn-lang" id="btnTranslate">
+          <span>🌐</span> <span id="langBtnText">Translate to English</span>
+        </button>
+        <button class="btn-pill btn-present" id="btnPresent">
+          <span>🖥️</span> <span id="presentBtnText" data-i18n="presentBtn">Modo Exposición</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Encabezado Cute con Mascota Nubecita -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-tag" data-i18n="heroTag">🎀 Proyecto Final de Inglés • Guía Interactiva</div>
+        <h1>Simple Past <span>Tense</span></h1>
+        <p data-i18n="heroDesc">
+          ¡Aprende de forma súper fácil y divertida a hablar de acciones que empezaron y terminaron en el pasado! Domina verbos regulares (<strong>-ed</strong>), irregulares, pronunciación y expresiones de tiempo.
+        </p>
+      </div>
+
+      <!-- Ilustración SVG Kawaii: Nubecita Graduada -->
+      <div class="hero-mascot" aria-hidden="true">
+        <svg viewBox="0 0 220 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="110" cy="175" rx="65" ry="9" fill="#BAE6FD" opacity="0.6"/>
+          <path d="M55 135C36 135 22 121 22 103C22 87 34 73 50 71C56 49 76 34 100 34C127 34 149 53 153 79C168 81 180 94 180 110C180 124 168 135 153 135H55Z" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="4"/>
+          <circle cx="82" cy="96" r="5" fill="#1E3A5F"/>
+          <circle cx="84" cy="94" r="1.8" fill="#FFFFFF"/>
+          <circle cx="122" cy="96" r="5" fill="#1E3A5F"/>
+          <circle cx="124" cy="94" r="1.8" fill="#FFFFFF"/>
+          <ellipse cx="70" cy="105" rx="7" ry="4" fill="#FBCFE8"/>
+          <ellipse cx="134" cy="105" rx="7" ry="4" fill="#FBCFE8"/>
+          <path d="M95 103C98 108 106 108 109 103" stroke="#1E3A5F" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M100 18L142 32L100 46L58 32L100 18Z" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M76 38V50C76 50 88 57 100 57C112 57 124 50 124 50V38" fill="#7DD3FC" stroke="#0284C7" stroke-width="2.5"/>
+          <path d="M138 33V52" stroke="#F472B6" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="138" cy="54" r="4" fill="#F472B6"/>
+          <path d="M185 38L188 45L195 48L188 51L185 58L182 51L175 48L182 45L185 38Z" fill="#FDE047" stroke="#EAB308" stroke-width="1.5"/>
+          <path d="M32 45L34 50L39 52L34 54L32 59L30 54L25 52L30 50L32 45Z" fill="#F9A8D4"/>
+          <circle cx="175" cy="148" r="5" fill="#A7F3D0"/>
+        </svg>
+      </div>
+    </header>
+  <h2 style="text-align: center; color: rgb(11, 11, 58); font-family: 'Montserrat', sans-serif; font-weight: bold; font-style: italic;">
+  SELECCIONA UN BOTON
+</h2>
+
+    <!-- Navegación por Pestañas (5 secciones basadas en tu presentación) -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="grammar" data-i18n="tabGrammar">📘 Gramática & Reglas</button>
+      <button class="tab-btn" data-tab="pronunciation" data-i18n="tabPron">🔊 Pronunciación -ed</button>
+      <button class="tab-btn" data-tab="reading" data-i18n="tabReading">📖 Reading: Daniel</button>
+      <button class="tab-btn" data-tab="mistakes" data-i18n="tabMistakes">✏️ Corrige Errores (10)</button>
+      <button class="tab-btn" data-tab="verbs" data-i18n="tabVerbs">🃏 Verbos Irregulares</button>
+    </div>
+
+    <!-- SECCIÓN 1: GRAMÁTICA & REGLAS ORTOGRÁFICAS -->
+    <section id="grammar" class="section active">
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="10" y="12" width="44" height="40" rx="8" fill="#E0F2FE" stroke="#38BDF8" stroke-width="3"/>
+              <path d="M32 12V52" stroke="#38BDF8" stroke-width="3"/>
+              <path d="M17 23H26M17 31H26M38 23H47M38 31H47" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M32 39C30.5 37 27 37.5 27 40.5C27 43 32 46 32 46C32 46 37 43 37 40.5C37 37.5 33.5 37 32 39Z" fill="#F472B6"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="sec1Title">1. Estructuras del Simple Past Tense</h2>
+            <p class="card-sub" data-i18n="sec1Sub">Usamos el Simple Past para acciones que ocurrieron y terminaron en un momento específico del pasado.</p>
+          </div>
+        </div>
+
+        <div class="rules-grid">
+          <div class="rule-card card-aff">
+            <h4>🌸 <span data-i18n="affTitle">Afirmativo (+)</span></h4>
+            <div class="mini-formula">Subject + Verb (Past) + Complement</div>
+            <ul>
+              <li><em>We <strong>watched</strong> TV last night.</em> (Regular)</li>
+              <li><em>I <strong>ate</strong> a delicious cake at home.</em> (Irregular)</li>
+              <li><em>She <strong>traveled</strong> to Japan last year.</em></li>
+            </ul>
+          </div>
+
+          <div class="rule-card card-neg">
+            <h4>🧁 <span data-i18n="negTitle">Negativo (-)</span></h4>
+            <div class="mini-formula">Subject + didn't + Verb (Base)</div>
+            <p class="rule-note" data-i18n="negNote">¡Ojo! Al usar <strong>didn't</strong>, el verbo vuelve a su forma base (sin -ed).</p>
+            <ul>
+              <li><em>I <strong>didn't work</strong> at night.</em></li>
+              <li><em>They <strong>didn't go</strong> to the beach last week.</em></li>
+            </ul>
+          </div>
+
+          <div class="rule-card card-int">
+            <h4>🎀 <span data-i18n="intTitle">Interrogativo (?)</span></h4>
+            <div class="mini-formula">Did / Didn't + Subject + Verb (Base)?</div>
+            <p class="rule-note" data-i18n="intNote">Al preguntar con <strong>Did</strong>, también olvidamos el sufijo del pasado.</p>
+            <ul>
+              <li><em><strong>Did</strong> you <strong>work</strong> at night?</em></li>
+              <li><em><strong>Did</strong> we <strong>buy</strong> food today?</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Expresiones de Tiempo -->
+        <div class="time-box">
+          <strong data-i18n="timeLabel">⏰ Time Expressions (Expresiones de Tiempo):</strong>
+          <div class="time-pills">
+            <span>Yesterday</span>
+            <span>Last night</span>
+            <span>Last week</span>
+            <span>Last Saturday</span>
+            <span>Last summer</span>
+            <span>Last year</span>
+            <span>Two days ago</span>
+            <span>Five years ago</span>
+            <span>In 1996</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reglas de Spelling (-ed) -->
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="22" fill="#FCE7F3" stroke="#F472B6" stroke-width="3"/>
+              <path d="M24 34L30 40L42 25" stroke="#DB2777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="sec2Title">2. Reglas de Escritura (Spelling Rules - Regular Verbs)</h2>
+            <p class="card-sub" data-i18n="sec2Sub">Cómo agregar correctamente la terminación <strong>-ed</strong> a los verbos regulares.</p>
+          </div>
+        </div>
+
+        <div class="spelling-grid">
+          <div class="spell-item">
+            <span class="spell-badge">Regla General: + ed</span>
+            <p data-i18n="sp1">La mayoría de verbos solo añaden <strong>-ed</strong>.</p>
+            <div class="spell-ex">Walk → Walk<strong>ed</strong> • Work → Work<strong>ed</strong> • Clean → Clean<strong>ed</strong></div>
+          </div>
+          <div class="spell-item">
+            <span class="spell-badge">Terminados en -e: + d</span>
+            <p data-i18n="sp2">Si el verbo ya termina en <strong>-e</strong>, solo agrega <strong>-d</strong>.</p>
+            <div class="spell-ex">Live → Live<strong>d</strong> • Close → Close<strong>d</strong> • Dance → Dance<strong>d</strong></div>
+          </div>
+          <div class="spell-item">
+            <span class="spell-badge">Consonante + y: -ied</span>
+            <p data-i18n="sp3">Cambia la <strong>y</strong> por <strong>i</strong> y agrega <strong>-ed</strong>.</p>
+            <div class="spell-ex">Study → Stud<strong>ied</strong> • Cry → Cr<strong>ied</strong> • Carry → Carr<strong>ied</strong></div>
+          </div>
+          <div class="spell-item">
+            <span class="spell-badge">Vocal + y: + ed</span>
+            <p data-i18n="sp4">Si hay vocal antes de la <strong>y</strong>, NO se cambia.</p>
+            <div class="spell-ex">Play → Play<strong>ed</strong> • Stay → Stay<strong>ed</strong></div>
+          </div>
+          <div class="spell-item" style="grid-column: 1 / -1;">
+            <span class="spell-badge">Consonante + Vocal + Consonante (CVC): Duplica</span>
+            <p data-i18n="sp5">Si termina en 1 vocal + 1 consonante acentuada (excepto w, y), duplica la última consonante + <strong>-ed</strong>.</p>
+            <div class="spell-ex">Stop → Stop<strong>ped</strong> • Wrap → Wrap<strong>ped</strong> • Commit → Commit<strong>ted</strong> • Prefer → Prefer<strong>red</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: PRONUNCIACIÓN DE -ED -->
+    <section id="pronunciation" class="section">
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="12" y="16" width="40" height="32" rx="10" fill="#DBEAFE" stroke="#3B82F6" stroke-width="3"/>
+              <path d="M24 27L31 22V42L24 37H19V27H24Z" fill="#2563EB"/>
+              <path d="M37 26C39.5 29 39.5 35 37 38M42 22C46 27 46 37 42 42" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="pronTitle">Pronunciación de la terminación "-ed"</h2>
+            <p class="card-sub" data-i18n="pronSub">Aunque todos terminan en "-ed" al escribirse, ¡tienen 3 sonidos diferentes! Haz clic en los botones para escucharlos.</p>
+          </div>
+        </div>
+
+        <div class="pron-grid">
+          <!-- Sonido /t/ -->
+          <div class="pron-card pron-t">
+            <div class="sound-bubble">/ t /</div>
+            <p class="pron-rule" data-i18n="pronTRule">Cuando el verbo termina en sonido sordo: <strong>p, k, f, s, ch, sh, x, th</strong></p>
+            <div class="pron-words">
+              <button class="word-speak" data-word="Hoped">Hope → <strong>Hoped</strong> 🔊</button>
+              <button class="word-speak" data-word="Worked">Work → <strong>Worked</strong> 🔊</button>
+              <button class="word-speak" data-word="Laughed">Laugh → <strong>Laughed</strong> 🔊</button>
+              <button class="word-speak" data-word="Missed">Miss → <strong>Missed</strong> 🔊</button>
+              <button class="word-speak" data-word="Searched">Search → <strong>Searched</strong> 🔊</button>
+              <button class="word-speak" data-word="Finished">Finish → <strong>Finished</strong> 🔊</button>
+              <button class="word-speak" data-word="Fixed">Fix → <strong>Fixed</strong> 🔊</button>
+              <button class="word-speak" data-word="Watched">Watch → <strong>Watched</strong> 🔊</button>
+            </div>
+          </div>
+
+          <!-- Sonido /d/ -->
+          <div class="pron-card pron-d">
+            <div class="sound-bubble">/ d /</div>
+            <p class="pron-rule" data-i18n="pronDRule">Cuando el verbo termina en sonido sonoro: <strong>b, g, j, m, n, l, r, th, w, v, z</strong></p>
+            <div class="pron-words">
+              <button class="word-speak" data-word="Grabbed">Grab → <strong>Grabbed</strong> 🔊</button>
+              <button class="word-speak" data-word="Managed">Manage → <strong>Managed</strong> 🔊</button>
+              <button class="word-speak" data-word="Named">Name → <strong>Named</strong> 🔊</button>
+              <button class="word-speak" data-word="Happened">Happen → <strong>Happened</strong> 🔊</button>
+              <button class="word-speak" data-word="Killed">Kill → <strong>Killed</strong> 🔊</button>
+              <button class="word-speak" data-word="Offered">Offer → <strong>Offered</strong> 🔊</button>
+              <button class="word-speak" data-word="Observed">Observe → <strong>Observed</strong> 🔊</button>
+            </div>
+          </div>
+
+          <!-- Sonido /Id/ -->
+          <div class="pron-card pron-id">
+            <div class="sound-bubble">/ ɪd /</div>
+            <p class="pron-rule" data-i18n="pronIdRule">Cuando la última consonante del verbo es: <strong>t</strong> o <strong>d</strong></p>
+            <div class="pron-words">
+              <button class="word-speak" data-word="Accepted">Accept → <strong>Accepted</strong> 🔊</button>
+              <button class="word-speak" data-word="Added">Add → <strong>Added</strong> 🔊</button>
+              <button class="word-speak" data-word="Wanted">Want → <strong>Wanted</strong> 🔊</button>
+              <button class="word-speak" data-word="Needed">Need → <strong>Needed</strong> 🔊</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: READING COMPREHENSION (DANIEL) -->
+    <section id="reading" class="section">
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="10" y="14" width="44" height="32" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="3"/>
+              <path d="M24 52H40M32 46V52" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+              <path d="M25 26L20 30L25 34M39 26L44 30L39 34M34 24L30 36" stroke="#F472B6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="readTitle">Reading Comprehension: Daniel's Web Project 💻</h2>
+            <p class="card-sub" data-i18n="readSub">Lee la historia de Daniel sobre diseño web y programación, y responde las 7 preguntas interactivas.</p>
+          </div>
+        </div>
+
+        <div class="story-box">
+          <button class="btn-pill btn-lang" id="btnReadAudio" style="margin-bottom:12px;">🔊 <span data-i18n="listenStory">Escuchar lectura en inglés</span></button>
+          <p>
+            Last year, Daniel <mark>started</mark> a new career in web design and programming. He <mark>studied</mark> HTML, CSS, and JavaScript at a technical institute. Every day, he <mark>practiced</mark> how to create websites and <mark>designed</mark> simple web pages.
+          </p>
+          <p>
+            After a few months, Daniel <mark>created</mark> his first professional website for a small company. He <mark>developed</mark> the homepage, <mark>added</mark> images, and <mark>organized</mark> the content. He also <mark>tested</mark> the website on different devices and <mark>fixed</mark> several programming errors.
+          </p>
+          <p>
+            Daniel <mark>worked</mark> with a team of designers and programmers. They <mark>discussed</mark> the project, <mark>shared</mark> ideas, and <mark>solved</mark> technical problems together. Sometimes, Daniel <mark>used</mark> programming tools to improve the website’s performance.
+          </p>
+          <p>
+            At the end of the project, the client <mark>visited</mark> the website and <mark>liked</mark> the design. Daniel <mark>felt</mark> very happy because he <mark>learned</mark> many new skills. The experience <mark>helped</mark> him understand that web design and programming <mark>were</mark> important for his professional career.
+          </p>
+        </div>
+
+        <h3 style="font-family:'Fredoka',sans-serif; margin: 20px 0 12px; color: var(--text-main);" data-i18n="readQTitle">📝 Preguntas de Comprensión (Haz clic para ver/practicar las respuestas):</h3>
+        <div class="reading-questions" id="readingQuestions"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: CORRIGE LOS ERRORES (EJERCICIO DE LA DIAPOSITIVA FINAL) -->
+    <section id="mistakes" class="section">
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M32 10L38 24L53 26L42 36L45 51L32 44L19 51L22 36L11 26L26 24L32 10Z" fill="#FEF08A" stroke="#EAB308" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="28" cy="31" r="2" fill="#854D0E"/>
+              <circle cx="36" cy="31" r="2" fill="#854D0E"/>
+              <path d="M30 35C31 36.5 33 36.5 34 35" stroke="#854D0E" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="misTitle">Let's Exercise! Corrige los Errores (10 Oraciones)</h2>
+            <p class="card-sub" data-i18n="misSub">Elige la forma correcta en Simple Past para corregir cada oración de la práctica.</p>
+          </div>
+        </div>
+
+        <div id="quizBody">
+          <div class="progress-wrap">
+            <div class="progress-bar" id="quizProgress"></div>
+          </div>
+          <div class="wrong-box">
+            <small data-i18n="wrongLabel">❌ ORACIÓN CON ERROR:</small>
+            <div id="wrongSentenceText">I don’t liked your cake.</div>
+          </div>
+          <div class="quiz-q" id="quizQuestion"></div>
+          <div class="options-grid" id="quizOptions"></div>
+          <div class="feedback-banner" id="quizFeedback"></div>
+          <div class="builder-actions" style="margin-top: 16px;">
+            <button class="btn btn-primary" id="btnNextQuiz" style="display:none;" data-i18n="btnNextQ">Siguiente Oración ➡️</button>
+          </div>
+        </div>
+
+        <div class="result-screen" id="quizResult">
+          <div class="trophy-wrap">
+            <svg viewBox="0 0 120 120" fill="none">
+              <path d="M35 25H85V52C85 66 74 77 60 77C46 77 35 66 35 52V25Z" fill="#FDE047" stroke="#EAB308" stroke-width="4"/>
+              <path d="M35 33H22C22 46 28 53 35 53" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
+              <path d="M85 33H98C98 46 92 53 85 53" stroke="#EAB308" stroke-width="4" stroke-linecap="round"/>
+              <rect x="53" y="77" width="14" height="16" fill="#FACC15" stroke="#EAB308" stroke-width="3"/>
+              <rect x="38" y="93" width="44" height="10" rx="5" fill="#38BDF8" stroke="#0284C7" stroke-width="3"/>
+              <circle cx="52" cy="48" r="3" fill="#854D0E"/>
+              <circle cx="68" cy="48" r="3" fill="#854D0E"/>
+              <path d="M56 54C58 57 62 57 64 54" stroke="#854D0E" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="46" cy="53" rx="4" ry="2.5" fill="#F472B6" opacity="0.7"/>
+              <ellipse cx="74" cy="53" rx="4" ry="2.5" fill="#F472B6" opacity="0.7"/>
+            </svg>
+          </div>
+          <h3 id="resultHeading" style="font-family:'Fredoka',sans-serif; font-size:1.7rem; color:var(--text-main);">¡Excelente trabajo!</h3>
+          <p id="resultScoreText" style="color:var(--text-soft); font-size:1.1rem; font-weight:700; margin:8px 0 20px;"></p>
+          <button class="btn btn-primary" id="btnRestartQuiz" data-i18n="btnRestart">🔄 Volver a Intentar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: TARJETAS MÁGICAS DE VERBOS IRREGULARES -->
+    <section id="verbs" class="section">
+      <div class="card">
+        <div class="card-header">
+          <div class="mini-illu">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="14" y="12" width="36" height="40" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="3"/>
+              <path d="M32 22L35 29L42 30L37 35L38 42L32 38L26 42L27 35L22 30L29 29L32 22Z" fill="#C4B5FD" stroke="#7C3AED" stroke-width="2"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="card-title" data-i18n="verbsTitle">Tarjetas Mágicas de Verbos Irregulares</h2>
+            <p class="card-sub" data-i18n="verbsSub">Haz clic en cualquier tarjeta para girarla y ver su forma en Simple Past, Past Participle y ejemplo.</p>
+          </div>
+        </div>
+
+        <div class="flashcards-grid" id="flashcardsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Footer con el nombre de Margarita Sanchez Nieves -->
+    <footer>
+      <div class="author-badge">
+        🌸 <span data-i18n="footerAuthorLabel">Proyecto Final de Inglés realizado por:</span> <strong>Margarita Sanchez Nieves</strong> ☁️✨
+      </div>
+      <div class="footer-sub" data-i18n="footerSub">
+        Simple Past 
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/inicio.js"></script>
+</body>
+</html>
